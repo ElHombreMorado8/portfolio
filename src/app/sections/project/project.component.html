@@ -1,0 +1,17 @@
+<span>{{ data.year }}</span>
+<span>{{ data.role }}</span>
+@if(data.description) {
+<p>{{ data.description }}</p>
+}
+@if(data.items) {
+<ul>
+    @for (item of data.items; track item){
+    <li>{{ item }}</li>
+    }
+</ul>
+}
+<div>
+    @for (language of data.languages; track language) {
+    <span class="language">{{ language }}</span>
+    }
+</div>
