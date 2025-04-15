@@ -1,0 +1,18 @@
+.navbar {
+  background-color: var(--nav-color);
+
+  .nav-link {
+    color: var(--nav-text-color) !important;
+    text-align: center;
+
+    &:hover {
+      color: var(--nav-text-color-hover) !important;
+    }
+
+    &.active {
+      font-weight: bold;
+      border-bottom: 2px solid var(--primary-color);
+      color: var(--nav-text-color-hover) !important;
+    }
+  }
+}

@@ -1,4 +1,6 @@
-<h2>Top Projects</h2>
-@for (section of experienceSections; track section.id) {
-<app-project [data]="section"></app-project>
-}
+<h2 class="mb-4">Top Projects</h2>
+<div class="projects-list">
+    @for (section of experienceSections; track section.id) {
+    <app-project [data]="section"></app-project>
+    }
+</div>

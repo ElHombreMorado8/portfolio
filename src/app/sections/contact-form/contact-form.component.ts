@@ -6,7 +6,8 @@ import { EmailService } from '../../services/email.service';
   selector: 'app-contact-form',
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './contact-form.component.html'
+  templateUrl: './contact-form.component.html',
+  styleUrl: './contact-form.component.css',
 })
 export class ContactFormComponent {
   contactForm: FormGroup;
