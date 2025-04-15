@@ -1,24 +1,44 @@
-<nav>
-  <ul>
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<nav class="navbar navbar-expand-md px-4 py-2 shadow-sm fixed-top">
+  <div class="container-fluid">
+    <!-- Theme Toggle -->
+    <button class="btn btn-secondary me-2" (click)="toggleTheme()">
+      {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+    </button>
+
+    <!-- Toggler only for mobile -->
+    <button class="border-0 bg-transparent d-md-none" type="button" (click)="isCollapsed = !isCollapsed"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible menu -->
+    <div [ngClass]="{'collapse': isCollapsed, 'navbar-collapse': true}" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0 gap-3">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<div id="hero">
+<section id="hero">
   <app-hero></app-hero>
-</div>
+</section>
 
-<div id="about">
+<section id="about">
   <app-about></app-about>
-</div>
+</section>
 
-<div id="projects">
+<section id="projects">
   <app-projects></app-projects>
-</div>
+</section>
 
-<div id="contact">
+<section id="contact">
   <app-contact-form></app-contact-form>
-</div>
+</section>
+
+<section id="contact">
+  <app-download-cv></app-download-cv>
+</section>

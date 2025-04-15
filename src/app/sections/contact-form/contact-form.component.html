@@ -1,4 +1,4 @@
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="container mt-4 p-4 border rounded shadow-sm bg-light">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="container p-4 border rounded shadow-sm">
     <h2 class="mb-3">Contact Me</h2>
 
     <div class="mb-3">
@@ -31,7 +31,10 @@
         }
     </div>
 
-    <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid || sending">
+    <button type="submit" class="btn btn-primary mb-3" [disabled]="contactForm.invalid || sending">
         {{ sending ? 'Sending...' : 'Send Message' }}
     </button>
+
+    <p>Or you can find me on <a href="https://www.linkedin.com/in/iris-murillo-robla/">LinkedIn</a> and <a
+            href="https://github.com/ElHombreMorado8/">GitHub</a></p>
 </form>
