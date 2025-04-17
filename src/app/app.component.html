@@ -1,8 +1,14 @@
 <nav class="navbar navbar-expand-md px-4 py-2 shadow-sm fixed-top">
   <div class="container-fluid">
+    <!-- Language Toggle -->
+    <div class="me-2">
+      <button class="btn btn-outline-primary btn-sm me-1" (click)="switchLanguage('en')">EN</button>
+      <button class="btn btn-outline-primary btn-sm" (click)="switchLanguage('es')">ES</button>
+    </div>
+
     <!-- Theme Toggle -->
     <button class="btn btn-secondary me-2" (click)="toggleTheme()">
-      {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+      {{ isDarkMode ? ('THEME.LIGHT' | translate) : ('THEME.DARK' | translate) }}
     </button>
 
     <!-- Toggler only for mobile -->
@@ -14,14 +20,15 @@
     <!-- Collapsible menu -->
     <div [ngClass]="{'collapse': isCollapsed, 'navbar-collapse': true}" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-md-0 gap-3">
-        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hero">{{ 'NAV.HOME' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">{{ 'NAV.ABOUT' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">{{ 'NAV.PROJECTS' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">{{ 'NAV.CONTACT' | translate }}</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <section id="hero">
   <app-hero></app-hero>
@@ -39,6 +46,6 @@
   <app-contact-form></app-contact-form>
 </section>
 
-<section id="contact">
+<section id="download">
   <app-download-cv></app-download-cv>
 </section>

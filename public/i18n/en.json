@@ -1,0 +1,43 @@
+{
+    "NAV": {
+      "HOME": "Home",
+      "ABOUT": "About",
+      "PROJECTS": "Projects",
+      "CONTACT": "Contact"
+    },
+    "THEME": {
+      "LIGHT": "Light Mode",
+      "DARK": "Dark Mode"
+    },
+    "MODAL": {
+      "SELECT_RESUME_LANGUAGE": "Select Resume Language",
+      "ENGLISH": "English",
+      "SPANISH": "Spanish",
+      "CANCEL": "Cancel"
+    },
+    "ABOUT": {
+      "TITLE": "About Me",
+      "P1": "As a passionate and dedicated software developer, I began learning IT at a very young age.",
+      "P2": "Over the past four years, I have been developing my Fullstack skills, focusing on building innovative and robust web and mobile apps using new technologies — including client communication, API integration, and AI features.",
+      "P3": "Additionally, I have experience with Docker, GIT, AI, AWS, Google Cloud, Scrum methodology, Trello/Jira, microservices, and CI/CD pipelines.",
+      "P4": "Alongside my React, TypeScript, and Node.js expertise, I have also worked with HTML, CSS, Flutter, Next.js, Angular, and more."
+    },
+    "CONTACT": {
+      "TITLE": "Contact Me",
+      "NAME_LABEL": "Name",
+      "EMAIL_LABEL": "Email",
+      "MESSAGE_LABEL": "Message",
+      "SEND": "Send Message",
+      "SENDING": "Sending...",
+      "FOOTER": "Or you can find me on",
+      "AND": "and",
+      "ERRORS": {
+        "NAME_REQUIRED": "Name is required",
+        "EMAIL_REQUIRED": "Email is required",
+        "EMAIL_INVALID": "Invalid email format",
+        "MESSAGE_REQUIRED": "Message is required",
+        "MESSAGE_MINLENGTH": "Minimum {{min}} characters"
+      }
+    }
+  }
+  

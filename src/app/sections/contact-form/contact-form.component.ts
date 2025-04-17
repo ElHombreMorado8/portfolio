@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, TranslateModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.css',
 })
@@ -13,7 +14,10 @@ export class ContactFormComponent {
   contactForm: FormGroup;
   sending = false;
 
-  constructor(private fb: FormBuilder, private emailService: EmailService) {
+  constructor(
+    private fb: FormBuilder,
+    private emailService: EmailService,
+  ) {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -27,17 +31,19 @@ export class ContactFormComponent {
       this.emailService.sendEmail(this.contactForm.value)
         .then(() => {
           this.sending = false;
-          alert('✅ Message sent!');
+          alert('Message sent!');
           this.contactForm.reset();
         })
         .catch(() => {
           this.sending = false;
-          alert('❌ Something went wrong. Try again.');
+          alert('Something went wrong. Try again.');
         });
     }
   }
 
+
   get name() { return this.contactForm.get('name'); }
   get email() { return this.contactForm.get('email'); }
   get message() { return this.contactForm.get('message'); }
+
 }

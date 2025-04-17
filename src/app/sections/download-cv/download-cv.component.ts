@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ResumeLanguageDialogComponent } from '../../resume-language-dialog/resume-language-dialog.component';
 
 @Component({
   selector: 'app-download-cv',
-  imports: [],
   templateUrl: './download-cv.component.html',
-  styleUrl: './download-cv.component.css'
+  styleUrls: ['./download-cv.component.css'],
 })
 export class DownloadCvComponent {
+  constructor(private dialog: MatDialog) { }
 
+  openDialog() {
+    this.dialog.open(ResumeLanguageDialogComponent);
+  }
 }
