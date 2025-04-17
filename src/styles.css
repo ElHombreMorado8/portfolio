@@ -65,6 +65,9 @@ input:-webkit-autofill:active {
     background-color: var(--badge-color) !important;
   }
 }
+.mat-mdc-dialog-surface {
+  background-color: transparent !important;
+}
 
 :root {
   /* Light Theme */
