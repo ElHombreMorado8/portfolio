@@ -1,0 +1,18 @@
+<div class="modal-body text-center py-3 px-5">
+    <h2 class="mb-4">{{ 'MODAL.SELECT_RESUME_LANGUAGE' | translate }}</h2>
+
+    <div class="d-grid gap-3">
+        <a href="fullstack_cv_en.pdf" download class="btn btn-outline-primary btn-lg">
+            {{ 'MODAL.ENGLISH' | translate }}
+        </a>
+        <a href="fullstack_cv_es.pdf" download class="btn btn-outline-primary btn-lg">
+            {{ 'MODAL.SPANISH' | translate }}
+        </a>
+    </div>
+
+    <div class="mt-4">
+        <button class="btn btn-secondary" (click)="close()">
+            {{ 'MODAL.CANCEL' | translate }}
+        </button>
+    </div>
+</div>

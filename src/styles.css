@@ -1,15 +1,11 @@
 html {
   scroll-behavior: smooth;
-  padding-bottom: 120px;
   width: 80%;
   margin: auto;
 }
 body {
   background-color: var(--background);
   color: var(--text);
-}
-section {
-  padding-top: 120px;
 }
 .text-accent {
   color: var(--accent);
@@ -105,4 +101,13 @@ input:-webkit-autofill:active {
   --nav-color: #161b22;
   --nav-text-color: #e1e3e5;
   --nav-text-color-hover: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

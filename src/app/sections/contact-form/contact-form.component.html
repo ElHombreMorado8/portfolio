@@ -1,40 +1,46 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="container p-4 border rounded shadow-sm">
-    <h2 class="mb-3">Contact Me</h2>
+    <h2 class="mb-3">{{ 'CONTACT.TITLE' | translate }}</h2>
 
     <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
+        <label for="name" class="form-label">{{ 'CONTACT.NAME_LABEL' | translate }}</label>
         <input id="name" type="text" formControlName="name" class="form-control" />
-        @if (name?.touched && name?.invalid) {
-        <div class="text-danger small mt-1">Name is required</div>
+        @if (name?.touched && name?.errors?.['required']) {
+        <div class="text-danger small mt-1">{{ 'CONTACT.ERRORS.NAME_REQUIRED' | translate }}</div>
         }
     </div>
 
     <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
+        <label for="email" class="form-label">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
         <input id="email" type="email" formControlName="email" class="form-control" />
         @if (email?.touched && email?.errors?.['required']) {
-        <div class="text-danger small mt-1">Email is required</div>
+        <div class="text-danger small mt-1">{{ 'CONTACT.ERRORS.EMAIL_REQUIRED' | translate }}</div>
         }
         @if (email?.touched && email?.errors?.['email']) {
-        <div class="text-danger small mt-1">Invalid email format</div>
+        <div class="text-danger small mt-1">{{ 'CONTACT.ERRORS.EMAIL_INVALID' | translate }}</div>
         }
     </div>
 
     <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
+        <label for="message" class="form-label">{{ 'CONTACT.MESSAGE_LABEL' | translate }}</label>
         <textarea id="message" rows="5" formControlName="message" class="form-control"></textarea>
         @if (message?.touched && message?.errors?.['required']) {
-        <div class="text-danger small mt-1">Message is required</div>
+        <div class="text-danger small mt-1">{{ 'CONTACT.ERRORS.MESSAGE_REQUIRED' | translate }}</div>
         }
         @if (message?.touched && message?.errors?.['minlength']) {
-        <div class="text-danger small mt-1">Minimum 10 characters</div>
+        <div class="text-danger small mt-1">
+            {{ 'CONTACT.ERRORS.MESSAGE_MINLENGTH' | translate }}
+        </div>
         }
     </div>
 
     <button type="submit" class="btn btn-primary mb-3" [disabled]="contactForm.invalid || sending">
-        {{ sending ? 'Sending...' : 'Send Message' }}
+        {{ sending ? ('CONTACT.SENDING' | translate) : ('CONTACT.SEND' | translate) }}
     </button>
 
-    <p>Or you can find me on <a href="https://www.linkedin.com/in/iris-murillo-robla/">LinkedIn</a> and <a
-            href="https://github.com/ElHombreMorado8/">GitHub</a></p>
+    <p>
+        {{ 'CONTACT.FOOTER' | translate }}
+        <a href="https://www.linkedin.com/in/iris-murillo-robla/">LinkedIn</a>
+        {{ 'CONTACT.AND' | translate }}
+        <a href="https://github.com/ElHombreMorado8/">GitHub</a>.
+    </p>
 </form>
