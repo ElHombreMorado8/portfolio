@@ -1,0 +1,107 @@
+{
+    "NAV": {
+      "HOME": "Inicio",
+      "ABOUT": "Sobre mí",
+      "PROJECTS": "Proyectos",
+      "CONTACT": "Contacto"
+    },
+    "THEME": {
+      "LIGHT": "Modo Claro",
+      "DARK": "Modo Oscuro"
+    },
+    "MODAL": {
+      "SELECT_RESUME_LANGUAGE": "Selecciona el idioma del currículum",
+      "ENGLISH": "Inglés",
+      "SPANISH": "Español",
+      "CANCEL": "Cancelar"
+    },
+    "ABOUT": {
+      "TITLE": "Sobre mí",
+      "P1": "Como desarrolladora de software apasionada y dedicada, comencé a aprender informática desde muy joven.",
+      "P2": "Durante los últimos cuatro años, he estado desarrollando mis habilidades Fullstack, enfocándome en construir aplicaciones web y móviles innovadoras y robustas utilizando nuevas tecnologías — incluyendo comunicación con clientes, integración de APIs y funcionalidades de IA.",
+      "P3": "Además, tengo experiencia con Docker, GIT, IA, AWS, Google Cloud, metodología Scrum, Trello/Jira, microservicios y pipelines de CI/CD.",
+      "P4": "Junto con mi experiencia en React, TypeScript y Node.js, también he trabajado con HTML, CSS, Flutter, Next.js, Angular y más."
+    },
+    "CONTACT": {
+      "TITLE": "Contáctame",
+      "NAME_LABEL": "Nombre",
+      "EMAIL_LABEL": "Correo electrónico",
+      "MESSAGE_LABEL": "Mensaje",
+      "SEND": "Enviar mensaje",
+      "SENDING": "Enviando...",
+      "FOOTER": "O puedes encontrarme en",
+      "AND": "y",
+      "ERRORS": {
+        "NAME_REQUIRED": "El nombre es obligatorio",
+        "EMAIL_REQUIRED": "El correo electrónico es obligatorio",
+        "EMAIL_INVALID": "Formato de correo electrónico inválido",
+        "MESSAGE_REQUIRED": "El mensaje es obligatorio",
+        "MESSAGE_MINLENGTH": "Mínimo 10 caracteres"
+      }
+    },
+    "DOWNLOAD": {
+      "BUTTON": "Descargar Currículum"
+    },
+    "PROJECTS": {
+      "SECTIONS": [
+        {
+          "id": 1,
+          "year": "Desde 2021",
+          "role": "Desarrollador Fullstack y Frontend",
+          "description": "Mi experiencia general consiste en:",
+          "items": [
+            "Trabajando de cerca con equipos backend",
+            "Encargado de todo el ciclo de vida del proyecto desde recopilar requerimientos, diseño, implementación y despliegue a producción",
+            "Acostumbrado a trabajar bajo presión y con plazos ajustados",
+            "Diseño UI/UX, pixel perfect, aportando ideas creativas",
+            "Construcción de APIs con varios lenguajes como Python y Node",
+            "Gestión de APIs, nube, complementos y bases de datos",
+            "Implementación de inteligencia artificial",
+            "Optimización del tiempo de trabajo y del código"
+          ],
+          "languages": [
+            "HTML", "CSS", "JavaScript", "TypeScript", "Python", "Node.js",
+            "Next.js", "React", "Angular", "Java", "C++", "PHP",
+            "SQL", "NoSQL", "PostgreSQL", "MySQL"
+          ]
+        },
+        {
+          "id": 2,
+          "year": "Desde 2021",
+          "role": "Desarrollador web Fullstack",
+          "items": [
+            "Crear interfaces limpias e intuitivas",
+            "Desarrollar un backend robusto y efectivo",
+            "Encargado de la organización y documentación",
+            "Diseño e implementación de un sistema complejo de reportes y baneos impulsado por IA"
+          ],
+          "languages": ["TypeScript", "Next.js", "React"]
+        },
+        {
+          "id": 3,
+          "year": "2022",
+          "role": "Desarrollador Frontend",
+          "items": [
+            "Implementación de nuevas funcionalidades",
+            "Refactorización de código",
+            "Corrección de errores"
+          ],
+          "languages": ["TypeScript", "TailwindCSS", "React.ts"]
+        },
+        {
+          "id": 4,
+          "year": "Desde 2021",
+          "role": "Desarrollador móvil Fullstack",
+          "items": [
+            "Desarrollar nuevas funciones, testear, depurar, mantener y publicar la app",
+            "Integrar Firebase, Google Cloud y APIs",
+            "Proponer nuevas ideas emocionantes",
+            "AWS Rekognition para moderación de imágenes",
+            "OpenAI para moderación de texto"
+          ],
+          "languages": ["Flutter", "Dart", "Javascript", "HTML"]
+        }
+      ]
+    }
+  }
+  
